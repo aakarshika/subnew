@@ -1,0 +1,42 @@
+Script started on Wed 07 Nov 2018 12:41:56 PM EST
+[?1034hbash-4.2$ exitsys161 kernel "p testbin/sty;q"[C[C[C[C[C[C[C[C[C[C[17Pcd os161/root/
+bash-4.2$ cd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/sty;q"[1P;q"[1P;q"[1P;q"a;q"d;q"d;q" ;q"8;q" ;q"9;q"
+sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
+
+OS/161 base system version 2.0
+Copyright (c) 2000, 2001-2005, 2008-2011, 2013, 2014
+   President and Fellows of Harvard College.  All rights reserved.
+
+Aakarshika Priydarshi's system version 0 (ASST4b #26)
+
+5896k physical memory available
+Prcoess Bootstrap successfulDevice probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS/161 (System/161 2.x) features 0x0
+OS/161 kernel: p testbin/add 8 9
+Answer: 17
+Operation took 0.107258100 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 36459282 cycles (35475825 run, 983457 global-idle)
+sys161:   cpu0: 7494732 kern, 1874 user, 0 idle; 9400 ll, 9400/0 sc, 36220 sync
+sys161: 1358 irqs 49 exns 0r/0w disk 0r/692w console 9r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.297786 seconds (122.435 mhz)
+sys161: Elapsed virtual time: 1.462660923 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Wed 07 Nov 2018 12:42:09 PM EST

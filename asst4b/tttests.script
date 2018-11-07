@@ -1,0 +1,54 @@
+Script started on Wed 07 Nov 2018 12:43:41 PM EST
+[?1034hbash-4.2$ exitsys161 kernel "p testbin/palin;q"[C[C[C[C[C[C[C[C[C[C[19Pcd os161/root/
+bash-4.2$ cd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/palin;q"[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[K[C"t"t"t"[1P"1";"t"t"2";"t"t"3";"q"
+sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
+
+OS/161 base system version 2.0
+Copyright (c) 2000, 2001-2005, 2008-2011, 2013, 2014
+   President and Fellows of Harvard College.  All rights reserved.
+
+Aakarshika Priydarshi's system version 0 (ASST4b #26)
+
+5896k physical memory available
+Prcoess Bootstrap successfulDevice probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS/161 (System/161 2.x) features 0x0
+OS/161 kernel: tt1
+Starting thread test...
+001234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345671234567
+Thread test done.
+Operation took 1.961857480 seconds
+OS/161 kernel: tt2
+Starting thread test 2...
+0123456701452736
+Thread test 2 done.
+Operation took 0.749859240 seconds
+OS/161 kernel: tt3
+Starting thread test 3 (5 [sleepalots], 2 {computes}, 1 waker)
+[3][0][4][2]{1: 59}{0: 167}[4][1][3][0][2][4][1][3][0]{1: 158}[3]{0: 16}[1][2][4][0][2][1]{1: 10}[4]{0: 133}[3][0][4][2][1][0]{1: 22}{0: 139}[2][3][4][0][4]{1: 100}[0]{0: 139}[2][1][4][1][2]{1: 182}[0]{0: 121}[3][0][4][3][2][0]{1: 26}[4][1]{0: 169}[3][2][0][2]{1: 154}[3]{0: 241}[1][2][3]{1: 147}[4][1]{0: 199}[0][4][2][1][3][1]{1: 176}[2]{0: 22}[0][3][1][4][2][0][3][1][4][2][0][3][1][4][2][0][3][1][4][2][0][3][1][4][2][0][3][1][4][2][0][3][1][4][3][1]
+Thread test 3 done
+Operation took 13.005853920 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 430325972 cycles (430325972 run, 0 global-idle)
+sys161:   cpu0: 353348018 kern, 0 user, 0 idle; 43769 ll, 43769/0 sc, 219727 sync
+sys161: 5625 irqs 0 exns 0r/0w disk 0r/2378w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 13.829740 seconds (31.116 mhz)
+sys161: Elapsed virtual time: 17.217328263 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Wed 07 Nov 2018 12:44:18 PM EST
