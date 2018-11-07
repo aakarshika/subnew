@@ -1,6 +1,5 @@
-Script started on Wed 07 Nov 2018 12:42:42 PM EST
-[?1034hbash-4.2$ exitsys161 kernel "p testbin/multiexec;q"[C[C[C[C[C[C[C[C[C[C[23Pcd os161/root/
-bash-4.2$ cd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/multiexec;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"f;q"o;q"r;q"k;q"t;q"e;q"s;q"t;q"
+Script started on Wed 07 Nov 2018 01:25:01 PM EST
+[?1034hbash-4.2$ sys161 kernel "p testbin/forktest;q"
 sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
 
 OS/161 base system version 2.0
@@ -37,9 +36,9 @@ The system is halted.
 sys161: 75664340 cycles (74676768 run, 987572 global-idle)
 sys161:   cpu0: 42763800 kern, 437374 user, 0 idle; 13214 ll, 13214/0 sc, 44823 sync
 sys161: 1729 irqs 24643 exns 0r/0w disk 0r/821w console 9r/0w/3m emufs 0r/0w net
-sys161: Elapsed real time: 1.716951 seconds (44.069 mhz)
+sys161: Elapsed real time: 1.719119 seconds (44.0134 mhz)
 sys161: Elapsed virtual time: 3.030863234 seconds (25 mhz)
 bash-4.2$ exit
 exit
 
-Script done on Wed 07 Nov 2018 12:42:55 PM EST
+Script done on Wed 07 Nov 2018 01:25:29 PM EST

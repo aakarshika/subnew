@@ -1,6 +1,5 @@
-Script started on Wed 07 Nov 2018 12:42:17 PM EST
-[?1034hbash-4.2$ exitsys161 kernel "p testbin/add 8 9;q"[C[C[C[C[C[C[C[C[C[C[21Pcd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/sty;q"[C[C[C[C[C[C[C[C[C[C[17Pcd os161/root/
-bash-4.2$ cd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/add 8 9;q"[C[C[C[C[C[C[C[C[C[C[21Pcd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Kcd os161/root/[C[C[C[C[C[C[C[C[C[Csys161 kernel "p testbin/add 8 9;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"[1P;q"m;q"u;q"l;q"t;q"i;q"e;q"x;q"e;q"c;q"
+Script started on Wed 07 Nov 2018 01:25:36 PM EST
+[?1034hbash-4.2$ sys161 kernel "p testbin/muli[Ktiexec;q"
 sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
 
 OS/161 base system version 2.0
@@ -51,9 +50,9 @@ The system is halted.
 sys161: 102024278 cycles (101025788 run, 998490 global-idle)
 sys161:   cpu0: 70088896 kern, 13919 user, 0 idle; 19327 ll, 19327/0 sc, 58871 sync
 sys161: 2049 irqs 992 exns 0r/0w disk 0r/890w console 117r/0w/27m emufs 0r/0w net
-sys161: Elapsed real time: 2.808934 seconds (36.3214 mhz)
+sys161: Elapsed real time: 2.811774 seconds (36.2847 mhz)
 sys161: Elapsed virtual time: 4.085260844 seconds (25 mhz)
 bash-4.2$ exit
 exit
 
-Script done on Wed 07 Nov 2018 12:42:35 PM EST
+Script done on Wed 07 Nov 2018 01:26:12 PM EST

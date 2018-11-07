@@ -1,5 +1,6 @@
-Script started on Wed 07 Nov 2018 01:23:08 PM EST
-[?1034hbash-4.2$ sys161 kernel "p testbin/sty;q"
+Script started on Wed 07 Nov 2018 01:26:45 PM EST
+[?1034hbash-4.2$ echo "Hello there" >catfile[C catfile
+bash-4.2$ sys161 kernel "p testbin/farm;q"
 sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
 
 OS/161 base system version 2.0
@@ -24,17 +25,18 @@ lser0 at lamebus0
 con0 at lser0
 
 cpu0: MIPS/161 (System/161 2.x) features 0x0
-OS/161 kernel: p testbin/sty
-Operation took 61.345012950 seconds
+OS/161 kernel: p testbin/farm
+Hello there
+Operation took 35.129948340 seconds
 OS/161 kernel: q
 Shutting down.
 The system is halted.
-sys161: 1567258744 cycles (1566276761 run, 981983 global-idle)
-sys161:   cpu0: 278742912 kern, 1260006452 user, 0 idle; 34292 ll, 34292/0 sc, 86693 sync
-sys161: 7574 irqs 10446 exns 0r/0w disk 0r/677w console 57r/0w/15m emufs 0r/0w net
-sys161: Elapsed real time: 65.489437 seconds (23.9315 mhz)
-sys161: Elapsed virtual time: 62.694639413 seconds (25 mhz)
+sys161: 911909060 cycles (910925895 run, 983165 global-idle)
+sys161:   cpu0: 253376229 kern, 630004105 user, 0 idle; 23183 ll, 23183/0 sc, 64335 sync
+sys161: 4929 irqs 5275 exns 0r/0w disk 0r/691w console 45r/0w/13m emufs 0r/0w net
+sys161: Elapsed real time: 37.294435 seconds (24.4516 mhz)
+sys161: Elapsed virtual time: 36.480652083 seconds (25 mhz)
 bash-4.2$ exit
 exit
 
-Script done on Wed 07 Nov 2018 01:24:53 PM EST
+Script done on Wed 07 Nov 2018 01:28:10 PM EST

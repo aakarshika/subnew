@@ -1,6 +1,5 @@
-Script started on Wed 07 Nov 2018 12:39:09 PM EST
-[?1034hbash-4.2$ exitsys161 kernel "p testbin/badcall;q"[C[C[C[C[C[C[C[C[C[C[21Pcd os161/root/
-bash-4.2$ cd os161/root/[C[C[C[C[C[C[C[C[C[Cexit[Ksys161 kernel "p testbin/badcall;q"
+Script started on Wed 07 Nov 2018 01:28:55 PM EST
+[?1034hbash-4.2$ sys161 kernel "p testbin/badcall;q"
 sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
 
 OS/161 base system version 2.0
@@ -64,16 +63,16 @@ testbin/badcall: FAILURE: wrong exit code of subprocess
 testbin/badcall: passed: exec /bin/true with kernel pointer arg
 testbin/badcall: FAILURE: wrong exit code of subprocess
 Choose: !
-Operation took 30.255083926 seconds
+Operation took 12.199679880 seconds
 OS/161 kernel: q
 Shutting down.
 The system is halted.
-sys161: 790217462 cycles (222375766 run, 567841696 global-idle)
-sys161:   cpu0: 145633885 kern, 133801 user, 0 idle; 55777 ll, 55777/0 sc, 144406 sync
-sys161: 5485 irqs 6292 exns 0r/0w disk 2r/2739w console 10r/0w/3m emufs 0r/0w net
-sys161: Elapsed real time: 28.534950 seconds (27.693 mhz)
-sys161: Elapsed virtual time: 31.612988669 seconds (25 mhz)
-bash-4.2$ exit
+sys161: 338831746 cycles (225425613 run, 113406133 global-idle)
+sys161:   cpu0: 149575959 kern, 133802 user, 0 idle; 55818 ll, 55818/0 sc, 144434 sync
+sys161: 5482 irqs 6309 exns 0r/0w disk 2r/2739w console 10r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 10.458073 seconds (32.3991 mhz)
+sys161: Elapsed virtual time: 13.557559663 seconds (25 mhz)
+bash-4.2$ ed[Kxit
 exit
 
-Script done on Wed 07 Nov 2018 12:40:03 PM EST
+Script done on Wed 07 Nov 2018 01:29:23 PM EST
