@@ -1,0 +1,40 @@
+Script started on Thu 29 Nov 2018 01:38:13 AM EST
+[?1034hbash-4.2$ exit[K[K[K[Ke[Ksys161 -w kernel
+sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
+sys161: Waiting for debugger connection...
+sys161: New debugger connection
+
+OS/161 base system version 2.0
+Copyright (c) 2000, 2001-2005, 2008-2011, 2013, 2014
+   President and Fellows of Harvard College.  All rights reserved.
+
+Aakarshika Priydarshi's system version 0 (ASST5 #164)
+
+3848k physical memory available
+Prcoess Bootstrap successfulDevice probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS/161 (System/161 2.x) features 0x0
+OS/161 kernel [? for menu]: p testbin/add 6 7
+panic: Bus error exception, PC=0x800027a8
+sys161: trace: software-requested debugger stop
+sys161: 1936031074 cycles (35481767 run, 1900549307 global-idle)
+sys161:   cpu0: 5847019 kern, 0 user, 0 idle; 8724 ll, 8724/0 sc, 26246 sync
+sys161: 1313 irqs 3 exns 0r/0w disk 18r/646w console 7r/0w/2m emufs 0r/0w net
+sys161: Elapsed real time: 30.291629 seconds (63.9131 mhz)
+sys161: Elapsed virtual time: 77.445534463 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Thu 29 Nov 2018 01:40:57 AM EST

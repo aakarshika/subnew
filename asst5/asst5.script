@@ -1,0 +1,63 @@
+Script started on Thu 29 Nov 2018 01:33:07 AM EST
+[?1034hbash-4.2$ sys161 kernel "tt1;tt2;tt3;km1;km2; sys[C[C161[K[K[K[K[K[K[Kp testbin/forktest;q"
+sys161: System/161 release 2.0.2, compiled Feb  2 2015 11:24:13
+
+OS/161 base system version 2.0
+Copyright (c) 2000, 2001-2005, 2008-2011, 2013, 2014
+   President and Fellows of Harvard College.  All rights reserved.
+
+Aakarshika Priydarshi's system version 0 (ASST5 #164)
+
+3848k physical memory available
+Prcoess Bootstrap successfulDevice probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+
+cpu0: MIPS/161 (System/161 2.x) features 0x0
+OS/161 kernel: tt1
+Starting thread test...
+001234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345670123456701234567012345671234567
+Thread test done.
+Operation took 1.957857480 seconds
+OS/161 kernel: tt2
+Starting thread test 2...
+0123456701463257
+Thread test 2 done.
+Operation took 0.749859240 seconds
+OS/161 kernel: tt3
+Starting thread test 3 (5 [sleepalots], 2 {computes}, 1 waker)
+[1][4][0][2][3]{1: 0}{0: 115}[4][1][2][3][0][1][3][4]{1: 0}[1]{0: 40}[2][0][4][3][0]{1: 134}{0: 236}[2][1][3][4][2][4]{1: 246}[0]{0: 205}[3][4][0][3][1][2]{1: 144}[4][3]{0: 158}[0][1][4][2][3][0]{1: 104}[2]{0: 198}[3][1][0][4][3]{1: 63}[2][1]{0: 232}[3][4][0][1][2][4]{1: 15}[0][3]{0: 37}[1][0][2][1][4][3][2]{1: 120}[1]{0: 117}[2][0][4][3][2]{1: 254}[4][0]{0: 161}[3][2][1][0][4][3][2][1][0][4][3][2][1][0][4][3][2][1][0][4][2][3][1][0][4][2][1][0][1]
+Thread test 3 done
+Operation took 12.977846440 seconds
+OS/161 kernel: km1
+Starting kmalloc test...
+kmalloc test done
+Operation took 0.413867920 seconds
+OS/161 kernel: km2
+Starting kmalloc stress test...
+kmalloc stress test done
+Operation took 2.811860680 seconds
+OS/161 kernel: p testbin/forktest
+panic: Bus error exception, PC=0x800027a8
+sys161: trace: software-requested debugger stop
+sys161: Waiting for debugger connection...
+sys161: New debugger connection
+sys161: 517977504 cycles (517277274 run, 700230 global-idle)
+sys161:   cpu0: 431346918 kern, 0 user, 0 idle; 68212 ll, 68212/0 sc, 279510 sync
+sys161: 6366 irqs 3 exns 0r/0w disk 0r/2606w console 7r/0w/2m emufs 0r/0w net
+sys161: Elapsed real time: 74.314477 seconds (6.97008 mhz)
+sys161: Elapsed virtual time: 20.723389660 seconds (25 mhz)
+bash-4.2$ exit
+exit
+
+Script done on Thu 29 Nov 2018 01:36:18 AM EST

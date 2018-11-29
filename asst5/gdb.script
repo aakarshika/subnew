@@ -1,0 +1,83 @@
+Script started on Thu 29 Nov 2018 01:38:30 AM EST
+[?1034hbash-4.2$ os161-gdb kernel
+[?1034hGNU gdb 6.6
+Copyright (C) 2006 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "--host=x86_64-unknown-linux-gnu --target=mips-harvard-os161"...
+(gdb) target [K[K[K[K[K[K[Kdir ../eh [K/kern/compile/ASST5
+Source directories searched: /home/apriydar/os161/root/../eh/kern/compile/ASST5:$cdir:$cwd
+(gdb) target remote unix:.sockets/gdb
+Remote debugging using unix:.sockets/gdb
+[New Thread 10]
+__start () at ../../arch/sys161/main/start.S:54
+54	   addiu sp, sp, -24
+Current language:  auto; currently asm
+(gdb) d
+(gdb) y
+Undefined command: "y".  Try "help".
+(gdb) b vm_fault
+Breakpoint 1 at 0x80000c38: file ../../arch/mips/vm/coremap.c, line 163.
+(gdb) c
+Continuing.
+
+Breakpoint 1, vm_fault (faulttype=1, faultaddress=4194304)
+    at ../../arch/mips/vm/coremap.c:163
+163		bool valid = false;
+Current language:  auto; currently c
+(gdb) where
+#0  vm_fault (faulttype=1, faultaddress=4194304)
+    at ../../arch/mips/vm/coremap.c:163
+#1  0xffffffff8002ffec in mips_trap (tf=0x8004cc00)
+    at ../../arch/mips/locore/trap.c:242
+#2  0xffffffff80033da0 in common_exception ()
+    at ../../arch/mips/locore/exception-mips1.S:261
+#3  0xffffffff800027a8 in memcpy (dst=0x400000, src=0xbfe18000, len=8644)
+    at ../../../common/libc/string/memcpy.c:73
+Backtrace stopped: frame did not save the PC
+(gdb) c
+Continuing.
+
+Breakpoint 1, vm_fault (faulttype=2, faultaddress=4194304)
+    at ../../arch/mips/vm/coremap.c:163
+163		bool valid = false;
+(gdb) where
+#0  vm_fault (faulttype=2, faultaddress=4194304)
+    at ../../arch/mips/vm/coremap.c:163
+#1  0xffffffff8002ff94 in mips_trap (tf=0x8004cc00)
+    at ../../arch/mips/locore/trap.c:232
+#2  0xffffffff80033da0 in common_exception ()
+    at ../../arch/mips/locore/exception-mips1.S:261
+#3  0xffffffff800027a8 in memcpy (dst=0x400000, src=0xbfe18000, len=8644)
+    at ../../../common/libc/string/memcpy.c:73
+Backtrace stopped: frame did not save the PC
+(gdb) c
+Continuing.
+
+Program received signal SIGTRAP, Trace/breakpoint trap.
+lamebus_write_register (bus=0x8004be00, slot=30, offset=16, val=0)
+    at ../../arch/sys161/dev/lamebus_machdep.c:183
+183		membar_store_store();
+(gdb) where
+#0  lamebus_write_register (bus=0x8004be00, slot=30, offset=16, val=0)
+    at ../../arch/sys161/dev/lamebus_machdep.c:183
+#1  0xffffffff8000abb4 in ltrace_stop (code=0) at ../../dev/lamebus/ltrace.c:85
+#2  0xffffffff80014a38 in panic (
+    fmt=0x8003ab20 "Bus error exception, PC=0x%x\n") at ../../lib/kprintf.c:191
+#3  0xffffffff8003001c in mips_trap (tf=0x8004cc00)
+    at ../../arch/mips/locore/trap.c:257
+#4  0xffffffff80033da0 in common_exception ()
+    at ../../arch/mips/locore/exception-mips1.S:261
+#5  0xffffffff800027a8 in memcpy (dst=0x400000, src=0xbfe18000, len=8644)
+    at ../../../common/libc/string/memcpy.c:73
+Backtrace stopped: frame did not save the PC
+(gdb) c
+Continuing.
+Watchdog has expired.  Target detached.
+(gdb) quit
+bash-4.2$ exit
+exit
+
+Script done on Thu 29 Nov 2018 01:40:52 AM EST
